@@ -16,6 +16,9 @@ import TestPage from "./screens/testPage";
 import Loans from "./screens/Loans";
 import InvestmentPage from "./screens/investmentPage";
 import RisevestSignup from "./screens/RisevestSignup";
+import Creditregistry from "./screens/Creditregistry";
+import Tangerine from "./screens/Tangerine";
+import Providus from "./screens/Providus";
 
 // const Stack = createNativeStackNavigator();
 const Stack = createNativeStackNavigator<navNavigationType>();
@@ -41,11 +44,14 @@ export default function App() {
     <>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="RisevestSignup" component={RisevestSignup} options={{ headerShown: false }} />
-          <Stack.Screen name="InvestmentPage" component={InvestmentPage} options={{ headerShown: false }} />
-          <Stack.Screen name="Loans" component={Loans} options={{ headerShown: false }} />
-          <Stack.Screen name="Shop" component={Shop} options={{ headerShown: false }} />
+          <Stack.Screen name="Tangerine" component={Tangerine} options={{ headerShown: false }} />
+          <Stack.Screen name="Providus" component={Providus} options={{ headerShown: false }} />
+          <Stack.Screen name="Creditregistry" component={Creditregistry} options={{ headerShown: false }} />
 
+          <Stack.Screen name="Shop" component={Shop} options={{ headerShown: false }} />
+          <Stack.Screen name="Loans" component={Loans} options={{ headerShown: false }} />
+          <Stack.Screen name="InvestmentPage" component={InvestmentPage} options={{ headerShown: false }} />
+          <Stack.Screen name="RisevestSignup" component={RisevestSignup} options={{ headerShown: false }} />
           <Stack.Screen name="NotificationSettings" component={Notificationsettings} />
           <Stack.Screen name="Notification page" component={NotificationPage} />
 

@@ -10,6 +10,9 @@ export type navNavigationType = {
     "Subscription":undefined,
     "Healthinsurance":undefined
     "Test":undefined
+    "Creditregistry":undefined
+    "Tangerine":undefined
+    "Providus":undefined
   }
   
 export type NotificationsProp = NativeStackNavigationProp<navNavigationType>

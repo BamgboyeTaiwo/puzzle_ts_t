@@ -1,0 +1,34 @@
+import * as React from "react"
+import Svg, { Path, Defs, Pattern, Use, Image } from "react-native-svg"
+
+const CreditRegistryIcon = (props) => (
+  <Svg
+    width={60}
+    height={60}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    {...props}
+  >
+    <Path fill="url(#a)" d="M0 0h60v60H0z" />
+    <Defs>
+      <Pattern
+        id="a"
+        patternContentUnits="objectBoundingBox"
+        width={1}
+        height={1}
+      >
+        <Use xlinkHref="#b" transform="scale(.01667)" />
+      </Pattern>
+      <Image
+        id="b"
+        width={60}
+        height={60}
+        xlinkHref="data:image/png;base64,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"
+      />
+    </Defs>
+  </Svg>
+)
+
+export default CreditRegistryIcon
+
